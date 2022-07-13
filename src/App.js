@@ -8,7 +8,7 @@ import myEpicNFT from "./utils/MyEpicNFT.json";
 const CONTRACT_ADDRESS = "0xB2a23b63E784d56cB2c1947F0cE9c2C84eF4105d";
 const TWITTER_HANDLE = "hofweller_";
 const TWITTER_LINK = `https://twitter.com/${TWITTER_HANDLE}`;
-const OPENSEA_LINK = `https://testnets.opensea.io/collection/brewdaonft-p7uyu8oknw`;
+const OPENSEA_LINK = `https://testnets.opensea.io/collection/brewdaonft-l0wuk1ksfm`;
 const TOTAL_MINT_COUNT = 50;
 
 const App = () => {
