@@ -197,9 +197,9 @@ const App = () => {
           <p className="header gradient-text">brewDAO (test) NFT Collection</p>
           <p className="sub-text">
             Each NFT is a unique, randomly generated beer style. 
-            Discover your NFT today. {nftId}/50
-            left!
           </p>
+          <p className="sub-text">Discover your NFT today. {nftId}/50
+            left!  </p>
       
           {currentAccount === "" ? (
             renderNotConnectedContainer()
