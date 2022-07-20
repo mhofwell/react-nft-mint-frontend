@@ -51,7 +51,6 @@ const App = () => {
     }
   };
 
-
   const inventoryCheck = async () => {
     let tokenId;
     let inventoryRemaining;
@@ -71,13 +70,11 @@ const App = () => {
         tokenId = tokenId.toNumber();
         inventoryRemaining = 50 - (tokenId + 1);
         setNftId(inventoryRemaining);
-
       }
     } catch (error) {
       console.log(error);
     }
   };
-
 
   const connectWallet = async () => {
     try {
@@ -155,8 +152,8 @@ const App = () => {
           CONTRACT_ADDRESS,
           myEpicNFT.abi,
           signer
-          );
-          
+        );
+
         setMinting(true);
 
         console.log("Paying gas");
@@ -164,7 +161,7 @@ const App = () => {
         console.log("Mining...");
         await nftTXN.wait();
         setMinting(false);
-        
+
         console.log(
           `Mined, see txn: https://rinkeby.etherscan.io/tx/${nftTXN.hash}`
         );
@@ -196,11 +193,10 @@ const App = () => {
         <div className="header-container">
           <p className="header gradient-text">brewDAO (test) NFT Collection</p>
           <p className="sub-text">
-            Each NFT is a unique, randomly generated beer style. 
+            Each NFT is a unique, randomly generated beer style.
           </p>
-          <p className="sub-text">Discover your NFT today. {nftId}/50
-            left!  </p>
-      
+          <p className="sub-text">Discover your NFT today. {nftId}/50 left! </p>
+
           {currentAccount === "" ? (
             renderNotConnectedContainer()
           ) : (
@@ -211,13 +207,13 @@ const App = () => {
               Mint NFT
             </button>
           )}
-          
-            {minting &&
-              <div className="sub-text">We're minting your NFT!</div>}
 
+          {minting && <div className="sub-text">We're minting your NFT!</div>}
         </div>
         <a href={OPENSEA_LINK}>
-          <button className="cta-button connect-wallet-button">View Collection</button>
+          <button className="cta-button connect-wallet-button">
+            View Collection
+          </button>
         </a>
         <div className="footer-container">
           <img alt="Twitter Logo" className="twitter-logo" src={twitterLogo} />
