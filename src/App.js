@@ -196,7 +196,7 @@ const App = () => {
         <div className="header-container">
           <p className="header gradient-text">brewDAO (test) NFT Collection</p>
           <p className="sub-text">
-            Each unique. Each beautiful. Discover your NFT today. {nftId}/50
+            Each NFT is a unique, randomly generated beer style. Discover your NFT today. {nftId}/50
             left!
           </p>
       
