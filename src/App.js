@@ -5,10 +5,10 @@ import { ethers } from "ethers";
 import myEpicNFT from "./utils/MyEpicNFT.json";
 
 // Constants
-const CONTRACT_ADDRESS = "0xB2a23b63E784d56cB2c1947F0cE9c2C84eF4105d";
+const CONTRACT_ADDRESS = "0x2b903600c0a74DC36D792ee24b34DEDFa3e60962";
 const TWITTER_HANDLE = "hofweller_";
 const TWITTER_LINK = `https://twitter.com/${TWITTER_HANDLE}`;
-const OPENSEA_LINK = `https://testnets.opensea.io/collection/brewdaonft-l0wuk1ksfm`;
+const OPENSEA_LINK = `https://testnets.opensea.io/collection/brewdaonft-13dg41jvlb`;
 const TOTAL_MINT_COUNT = 50;
 
 const App = () => {
